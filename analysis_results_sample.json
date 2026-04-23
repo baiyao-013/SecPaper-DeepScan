@@ -1,0 +1,383 @@
+[
+  {
+    "title": "AVISE: Framework for Evaluating the Security of AI Systems",
+    "published_time": "2026-04-22T17:58:17Z",
+    "authors": [
+      "Mikko Lempinen",
+      "Joni Kemppainen",
+      "Niklas Raesalmi"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20833v1",
+    "html_link": null,
+    "conference_metadata": null,
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20833v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20833v1"
+    },
+    "analysis": {
+      "in_scope": false,
+      "categories": [],
+      "methods": [],
+      "is_innovative": null,
+      "innovation_summary": null,
+      "target_vulnerability_types": [],
+      "confidence": "low",
+      "evidence": []
+    }
+  },
+  {
+    "title": "An Analysis of Attack Vectors Against FIDO2 Authentication",
+    "published_time": "2026-04-22T17:52:56Z",
+    "authors": [
+      "Alexander Berladskyy",
+      "Andreas Aßmuth"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20826v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": "Proc of the First International Conference on Cross-Domain Security in Distributed, Intelligent and Critical Systems (CROSS-SEC 2026), Lisbon, Portugal, pp.~77--83, April 2026",
+      "comment": "7 pages",
+      "doi": null
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20826v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20826v1"
+    },
+    "analysis": {
+      "in_scope": true,
+      "categories": [
+        "vuln_discovery",
+        "vuln_exploitation",
+        "vuln_defense"
+      ],
+      "methods": [
+        "analysis of attack vectors"
+      ],
+      "is_innovative": null,
+      "innovation_summary": null,
+      "target_vulnerability_types": [
+        "FIDO2 authentication bypass",
+        "man-in-the-middle attacks",
+        "replay attacks"
+      ],
+      "confidence": "low",
+      "evidence": [
+        "Title: An Analysis of Attack Vectors Against FIDO2 Authentication",
+        "Published in CROSS-SEC 2026"
+      ]
+    }
+  },
+  {
+    "title": "Synthesizing Multi-Agent Harnesses for Vulnerability Discovery",
+    "published_time": "2026-04-22T17:27:40Z",
+    "authors": [
+      "Hanzhi Liu",
+      "Chaofan Shou",
+      "Xiaonan Liu",
+      "Hongbo Wen",
+      "Yanju Chen",
+      "Ryan Jingyang Fang",
+      "Yu Feng"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20801v1",
+    "html_link": null,
+    "conference_metadata": null,
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20801v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20801v1"
+    },
+    "analysis": {
+      "in_scope": true,
+      "categories": [
+        "vuln_discovery"
+      ],
+      "methods": [
+        "multi-agent harness synthesis"
+      ],
+      "is_innovative": true,
+      "innovation_summary": "相对于传统的单智能体或静态/动态分析方法，该论文提出了一种多智能体协同的漏洞发现框架，可能通过智能体间的协作提高发现效率和覆盖面。",
+      "target_vulnerability_types": [
+        "general vulnerabilities"
+      ],
+      "confidence": "medium",
+      "evidence": [
+        "标题明确提及漏洞发现，并提出了多智能体合成方法"
+      ]
+    }
+  },
+  {
+    "title": "Fresh Masking Makes NTT Pipelines Composable: Machine-Checked Proofs for Arithmetic Masking in PQC Hardware",
+    "published_time": "2026-04-22T17:19:22Z",
+    "authors": [
+      "Ray Iskander",
+      "Khaled Kirah"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20793v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": null,
+      "comment": "15 pages, 0 figures",
+      "doi": null
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20793v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20793v1"
+    },
+    "analysis": {
+      "in_scope": true,
+      "categories": [
+        "vuln_defense"
+      ],
+      "methods": [
+        "arithmetic masking",
+        "machine-checked proofs"
+      ],
+      "is_innovative": true,
+      "innovation_summary": "Fresh masking approach that makes NTT pipelines composable, enabling machine-checked security proofs for arithmetic masking in PQC hardware, which improves composability over traditional masking schemes.",
+      "target_vulnerability_types": [
+        "side-channel attack"
+      ],
+      "confidence": "low",
+      "evidence": [
+        "Title mentions 'Fresh Masking' and 'Machine-Checked Proofs for Arithmetic Masking' which are defensive techniques against side-channel attacks in PQC hardware."
+      ]
+    }
+  },
+  {
+    "title": "DAIRE: A lightweight AI model for real-time detection of Controller Area Network attacks in the Internet of Vehicles",
+    "published_time": "2026-04-22T16:58:58Z",
+    "authors": [
+      "Shahid Alam",
+      "Amina Jameel",
+      "Zahida Parveen",
+      "Ehab Alnfrawy",
+      "Adeela Ashraf",
+      "Raza Uddin",
+      "Jamal Aqib"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20771v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": "Machine Learning with Applications (2026): 100859",
+      "comment": null,
+      "doi": "10.1016/j.mlwa.2026.100859"
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20771v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20771v1"
+    },
+    "analysis": {
+      "in_scope": true,
+      "categories": [
+        "vuln_defense"
+      ],
+      "methods": [
+        "lightweight AI model (DAIRE)"
+      ],
+      "is_innovative": null,
+      "innovation_summary": null,
+      "target_vulnerability_types": [
+        "Controller Area Network attacks (e.g., replay, spoofing)"
+      ],
+      "confidence": "low",
+      "evidence": [
+        "Title mentions real-time detection of CAN attacks in Internet of Vehicles, indicating defense focus.",
+        "Conference metadata suggests publication, but abstract not provided."
+      ]
+    }
+  },
+  {
+    "title": "CVEs With a CVSS Score Greater Than or Equal to 9",
+    "published_time": "2026-04-22T16:50:25Z",
+    "authors": [
+      "Lena Sinterhauf",
+      "Andreas Aßmuth",
+      "Roland Kaltefleiter"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20765v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": "Proc of the First International Conference on Cross-Domain Security in Distributed, Intelligent and Critical Systems (CROSS-SEC 2026), Lisbon, Portugal, pp.~17--23, April 2026",
+      "comment": "7 pages",
+      "doi": null
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20765v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20765v1"
+    },
+    "analysis": {
+      "in_scope": false,
+      "categories": [],
+      "methods": [],
+      "is_innovative": null,
+      "innovation_summary": null,
+      "target_vulnerability_types": [],
+      "confidence": "low",
+      "evidence": []
+    }
+  },
+  {
+    "title": "Auto-ART: Structured Literature Synthesis and Automated Adversarial Robustness Testing",
+    "published_time": "2026-04-22T15:46:11Z",
+    "authors": [
+      "Abhijit Talluri"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20704v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": null,
+      "comment": "NeurIPS 2026 Evaluations and Datasets Track Submission",
+      "doi": null
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20704v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20704v1"
+    },
+    "analysis": {
+      "in_scope": true,
+      "categories": [
+        "vuln_discovery",
+        "vuln_defense"
+      ],
+      "methods": [
+        "automated adversarial robustness testing",
+        "structured literature synthesis"
+      ],
+      "is_innovative": true,
+      "innovation_summary": "结合结构化文献合成与自动化对抗鲁棒性测试，可能创新点在于利用文献知识指导自动化测试生成，区别于传统依赖手工规则或单一测试方法。",
+      "target_vulnerability_types": [
+        "adversarial examples",
+        "model robustness vulnerabilities"
+      ],
+      "confidence": "medium",
+      "evidence": [
+        "标题包含'Automated Adversarial Robustness Testing'和'Structured Literature Synthesis'，指向对抗样本测试与文献综合方法的结合，属于安全测试领域。"
+      ]
+    }
+  },
+  {
+    "title": "SoK: The Next Frontier in AV Security: Systematizing Perception Attacks and the Emerging Threat of Multi-Sensor Fusion",
+    "published_time": "2026-04-22T14:37:57Z",
+    "authors": [
+      "Shahriar Rahman Khan",
+      "Tariqul Islam",
+      "Raiful Hasan"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20621v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": null,
+      "comment": "20 Pages, 3 figures",
+      "doi": null
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20621v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20621v1"
+    },
+    "analysis": {
+      "in_scope": true,
+      "categories": [
+        "vuln_exploitation",
+        "vuln_defense"
+      ],
+      "methods": [
+        "systematic review"
+      ],
+      "is_innovative": null,
+      "innovation_summary": null,
+      "target_vulnerability_types": [
+        "perception attacks",
+        "multi-sensor fusion threats"
+      ],
+      "confidence": "low",
+      "evidence": [
+        "Title indicates systematization of perception attacks and multi-sensor fusion threats in AV security, but abstract is missing."
+      ]
+    }
+  },
+  {
+    "title": "Differentially Private Clustered Federated Learning with Privacy-Preserving Initialization and Normality-Driven Aggregation",
+    "published_time": "2026-04-22T14:12:18Z",
+    "authors": [
+      "Jie Xu",
+      "Haaris Mehmood",
+      "Rogier Van Dalen",
+      "Karthikeyan Saravanan",
+      "Mete Ozay"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20596v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": null,
+      "comment": "Accepted to ICASSP 2026 (Oral)",
+      "doi": null
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20596v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20596v1"
+    },
+    "analysis": {
+      "in_scope": false,
+      "categories": [],
+      "methods": [],
+      "is_innovative": null,
+      "innovation_summary": null,
+      "target_vulnerability_types": [],
+      "confidence": "high",
+      "evidence": [
+        "Title focuses on differential privacy in federated learning, not on vulnerability discovery, exploitation, or defense"
+      ]
+    }
+  },
+  {
+    "title": "PVAC: A RowHammer Mitigation Architecture Exploiting Per-victim-row Counting",
+    "published_time": "2026-04-22T13:56:38Z",
+    "authors": [
+      "Jumin Kim",
+      "Seungmin Baek",
+      "Hwayong Nam",
+      "Minbok Wi",
+      "Nam Sung Kim",
+      "Jung Ho Ahn"
+    ],
+    "pdf_link": "https://arxiv.org/pdf/2604.20576v1",
+    "html_link": null,
+    "conference_metadata": {
+      "journal_ref": null,
+      "comment": "16 pages, 13 figures, accepted at ISCA 2026, slightly extended",
+      "doi": null
+    },
+    "download": {
+      "doc_type": "pdf",
+      "doc_path": "downloads_sample/2604.20576v1.pdf",
+      "doc_url": "https://arxiv.org/pdf/2604.20576v1"
+    },
+    "analysis": {
+      "in_scope": true,
+      "categories": [
+        "vuln_defense"
+      ],
+      "methods": [
+        "per-victim-row counting architecture"
+      ],
+      "is_innovative": true,
+      "innovation_summary": "相对于传统RowHammer缓解方法（如ECC、TRR），创新性地采用每个受害者行计数机制，通过精确跟踪每个潜在受害行的访问频率来更有效地触发缓解操作，降低性能开销。",
+      "target_vulnerability_types": [
+        "RowHammer"
+      ],
+      "confidence": "high",
+      "evidence": [
+        "标题: PVAC: A RowHammer Mitigation Architecture Exploiting Per-victim-row Counting"
+      ]
+    }
+  }
+]
