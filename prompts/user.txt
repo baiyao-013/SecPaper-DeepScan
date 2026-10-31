@@ -1,0 +1,88 @@
+根据输入论文的 title 和 summary，按下面两个示例的字段与留空方式，输出严格 JSON。
+
+硬性约束：
+- 只能使用标题和摘要中明确写出或可直接改写的信息。
+- 摘要没写的字段一律填 null（数组类填 []）。禁止用常识补全。
+- one_sentence_summary 可对摘要做忠实压缩，不能加入摘要没有的技术细节。
+- 除枚举字段外，中文字段用中文。只输出 JSON，不要解释文字。
+
+枚举取值：
+- paper_type: review | original | benchmark_paper | other
+- domain: embodied | non_embodied | mixed | unclear
+- stance: attack | defense | both | neither
+- attacker_assumption_strength: too_strong | too_weak | reasonable | not_applicable | null
+- confidence: high | medium | low
+
+示例 1（攻击论文，摘要写清了投毒者与权限，按原文抽取）：
+输入数据: {"title": "Stealthy World Model Manipulation via Data Poisoning", "paper_content": "Model-based learning agents use learned world models to plan. Updating world models from collected experience creates a training-time attack surface: adversarially poisoned fine-tuning trajectories can manipulate the learned dynamics. We propose SWAAP, a two-stage data poisoning framework. It modifies only a limited fraction of fine-tuning transition targets via bilevel optimization and gradient matching."}
+输出:
+{
+  "paper_type": "original",
+  "domain": "embodied",
+  "stance": "attack",
+  "one_sentence_summary": "本文提出针对学习型世界模型的两阶段数据投毒框架 SWAAP，通过修改有限比例的微调转移目标操纵动力学并破坏下游规划。",
+  "attacker": {
+    "who": "数据投毒者",
+    "capabilities": "能够修改微调轨迹中有限比例的转移目标，并执行双层优化和梯度匹配",
+    "privilege_level": "能够访问并修改微调训练数据",
+    "topology_position": "训练数据供应链（微调数据收集阶段）",
+    "compute_resources": "能够执行双层优化和梯度匹配计算"
+  },
+  "trust_base": {
+    "trusted_components": ["世界模型", "下游规划器"],
+    "trusted_infrastructure": ["世界模型微调数据收集过程"]
+  },
+  "attack_goal": {
+    "target": "学习型世界模型及其下游规划",
+    "broken_security_properties": ["完整性", "性能"]
+  },
+  "out_of_scope": null,
+  "realism": {
+    "assessment": "攻击者需要能改微调数据，摘要给出的假设与数据投毒设定相符。",
+    "attacker_assumption_strength": "reasonable"
+  },
+  "method": "SWAAP 两阶段数据投毒：双层优化找有害目标世界模型，再用隐蔽约束梯度匹配改有限比例微调转移目标。",
+  "confidence": "high",
+  "evidence": [
+    "adversarially poisoned fine-tuning trajectories can manipulate the learned dynamics",
+    "modifies only a limited fraction of fine-tuning transition targets"
+  ]
+}
+
+示例 2（非攻防方法论文，威胁模型全部留空）：
+输入数据: {"title": "DashVMC: Real-Time Discrete World Model Control in Geometry Dash", "paper_content": "We present DashVMC, which learns a compact, action-conditioned world model from recorded Geometry Dash gameplay. A controller is initialized by behavioural cloning and refined with PPO entirely in frozen-model rollouts."}
+输出:
+{
+  "paper_type": "original",
+  "domain": "non_embodied",
+  "stance": "neither",
+  "one_sentence_summary": "本文提出 DashVMC，从游戏录像学习动作条件世界模型，并在冻结模型中用行为克隆与 PPO 训练控制器。",
+  "attacker": {
+    "who": null,
+    "capabilities": null,
+    "privilege_level": null,
+    "topology_position": null,
+    "compute_resources": null
+  },
+  "trust_base": {
+    "trusted_components": [],
+    "trusted_infrastructure": []
+  },
+  "attack_goal": {
+    "target": null,
+    "broken_security_properties": []
+  },
+  "out_of_scope": null,
+  "realism": {
+    "assessment": null,
+    "attacker_assumption_strength": "not_applicable"
+  },
+  "method": null,
+  "confidence": "high",
+  "evidence": [
+    "learns a compact, action-conditioned world model from recorded Geometry Dash gameplay"
+  ]
+}
+
+现在分析下面这篇，按同样格式输出：
+输入数据: {{INPUT_DATA}}
