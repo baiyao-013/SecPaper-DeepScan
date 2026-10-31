@@ -1,9 +1,0 @@
-.env
-.venv/
-__pycache__/
-*.pyc
-.Python
-analyzer_result/
-存档/
-results/
-results_temp*/
