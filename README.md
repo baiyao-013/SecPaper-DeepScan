@@ -6,7 +6,17 @@
 
 克隆仓库后，在项目根目录按下面做一遍即可。
 
-**1. 环境**
+**1. 解压已抓取数据（可选）**
+
+仓库里的 `results/` 只放压缩包 `summaries.zip`，不含散落的 JSON。要用这份已抓取的摘要时，先解压到 `results/`：
+
+```powershell
+Expand-Archive -Path results\summaries.zip -DestinationPath results -Force
+```
+
+解压后会出现 `results/cs.AI_2026_04_4717_summary.json` 这类文件。自己重新拉取则不必解压。
+
+**2. 环境**
 
 需要本机已安装 Python 3.10+。
 
@@ -17,7 +27,7 @@
 
 `setup.ps1` 会创建 `.venv`、安装依赖，并询问 API 配置后写入 `.env`。
 
-**2. API 配置**
+**3. API 配置**
 
 三项写在根目录 `.env`（由 `setup.ps1` 生成，也可自己建）：
 
@@ -25,7 +35,7 @@
 - `AI_BASE_URL`
 - `AI_API_KEY`
 
-**3. 提示词配置**
+**4. 提示词配置**
 
 直接改这两个文件：
 
@@ -34,7 +44,7 @@
 
 `user.txt` 须保留占位符 `{{INPUT_DATA}}`。
 
-**4. 拉取**
+**5. 拉取**
 
 ```powershell
 python src/fetcher_add_summary.py --category cs.AI --year 2026 --month 4 --per-request 500
@@ -42,7 +52,7 @@ python src/fetcher_add_summary.py --category cs.AI --year 2026 --month 4 --per-r
 
 结果在 `results/`，例如 `results/cs.AI_2026_04_4717_summary.json`。
 
-**5. 去重 / 关键词筛选（可选）**
+**6. 去重 / 关键词筛选（可选）**
 
 ```powershell
 # 单文件按 keywords.json 筛选 → results_temp01/
@@ -53,7 +63,7 @@ python src/deduplicate_results.py cs.AI_2026_04_4717_summary.json --keyword-grou
 python src/deduplicate_results.py cs.AI_2026_04_4717_summary.json cs.CR_2026_04_852_summary.json --keyword-groups-file keywords.json
 ```
 
-**6. 分析**
+**7. 分析**
 
 输入必须带非空 `summary`。
 
